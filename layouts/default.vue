@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-4 lg:max-w-4xl py-12">
+  <div class="font-karla container mx-auto px-4 lg:max-w-4xl py-12">
     <header-nav />
     <nuxt />
     <div class="text-center text-sm text-gray-500">
@@ -9,6 +9,7 @@
         href="https://github.com/knazran"
       >knazran</a>
     </div>
+    <img style="z-index:-1" class="absolute right-0 top-0" src="~/assets/img/Ellipse 1.png" />
   </div>
 </template>
 

@@ -876,6 +876,16 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
+"@iconify/icons-ant-design@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-ant-design/-/icons-ant-design-1.0.8.tgz#7cea4ea3a0467096dcba2ba050c72fe14fefe04f"
+  integrity sha512-tbmrVdJfIwgQuEFiV2aqMwgbjYT24ROLFoy6cXv+ZVL8KpkfKOPyUCs324w3EBn9NiL9M+AKNVSNbcydJq9jNg==
+
+"@iconify/vue@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@iconify/vue/-/vue-1.0.3.tgz#41e6ffb566b3c9462104862e6b8fde59d5f82a6e"
+  integrity sha512-EkEXaFRWN1t7xDuCgckSndVTjBbz2TJYBpYxANVEmwNxAAJXi+wTBlaX9QKgxoXLhUeJhCg6M9E2gwKyEHwJQw==
+
 "@lokidb/full-text-search@^2.0.0-beta.9":
   version "2.0.0-beta.9"
   resolved "https://registry.yarnpkg.com/@lokidb/full-text-search/-/full-text-search-2.0.0-beta.9.tgz#1aa1bd50c37da37437fa7ba6414f746ccafd0190"

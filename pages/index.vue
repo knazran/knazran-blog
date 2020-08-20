@@ -1,20 +1,19 @@
 <template>
-  <div class="my-8 lg:my-12">
-    <h1 class="text-center text-2xl tracking-widest font-bold">FOOD BLOG</h1>
-    <div class="my-8">
-      <blog-card v-for="(blogPost, index) in blogPosts" :key="index" :blogPost="blogPost"></blog-card>
-    </div>
+  <div class="py-12 lg:py-24">
+    <hero></hero>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
 import BlogCard from '~/components/BlogCard.vue'
+import Hero from '~/components/Hero.vue'
 
 export default {
   components: {
     Logo,
-    BlogCard
+    BlogCard,
+    Hero
   },
   head() {
     return {

@@ -1,0 +1,31 @@
+{
+  "name": "full-time-foodie-blog",
+  "version": "1.0.0",
+  "description": "A simple microblog, Full-time Foodie to document Sher's food adventure",
+  "author": "knazran",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xdesro/nuxt-netlify-cms-starter#readme"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@nuxt/content": "^1.6.0",
+    "@nuxtjs/markdownit": "^1.2.6",
+    "moment": "^2.27.0",
+    "nuxt": "^2.11.0"
+  },
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.10.4",
+    "@nuxtjs/tailwindcss": "^3.0.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.16.4"
+  }
+}

@@ -1,6 +1,9 @@
 <template>
   <div class="py-12 lg:py-24">
     <hero></hero>
+    <div class="my-20">
+      <contact></contact>
+    </div>
   </div>
 </template>
 
@@ -8,12 +11,14 @@
 import Logo from '~/components/Logo.vue'
 import BlogCard from '~/components/BlogCard.vue'
 import Hero from '~/components/Hero.vue'
+import Contact from '~/components/Contact.vue'
 
 export default {
   components: {
     Logo,
     BlogCard,
-    Hero
+    Hero,
+    Contact
   },
   head() {
     return {

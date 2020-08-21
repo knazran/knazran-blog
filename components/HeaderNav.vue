@@ -8,7 +8,7 @@
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Projects</nuxt-link>
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/about`">Blog</nuxt-link>
     </div>
-    <div id="nav" class="z-1 flex justify-center lg:justify-start space-x-6 text-sm">
+    <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-sm">
       <a class="text-gray-700 hover:text-black" href="https://www.linkedin.com/in/knazran/">
         <IconifyIcon :icon="icons.linkedin" height="24" />
       </a>

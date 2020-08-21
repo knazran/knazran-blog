@@ -1,7 +1,7 @@
 <template>
   <div class="py-12 lg:py-24">
     <hero></hero>
-    <div class="my-20">
+    <div class="mt-20">
       <contact></contact>
     </div>
   </div>

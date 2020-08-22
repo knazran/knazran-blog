@@ -1,6 +1,7 @@
 <template>
   <div class="py-12 lg:py-24">
     <hero></hero>
+    <skill-section></skill-section>
     <div class="mt-20">
       <contact></contact>
     </div>
@@ -12,13 +13,15 @@ import Logo from '~/components/Logo.vue'
 import BlogCard from '~/components/BlogCard.vue'
 import Hero from '~/components/Hero.vue'
 import Contact from '~/components/Contact.vue'
+import SkillSection from '~/components/SkillSection.vue'
 
 export default {
   components: {
     Logo,
     BlogCard,
     Hero,
-    Contact
+    Contact,
+    SkillSection
   },
   head() {
     return {

@@ -881,6 +881,16 @@
   resolved "https://registry.yarnpkg.com/@iconify/icons-ant-design/-/icons-ant-design-1.0.8.tgz#7cea4ea3a0467096dcba2ba050c72fe14fefe04f"
   integrity sha512-tbmrVdJfIwgQuEFiV2aqMwgbjYT24ROLFoy6cXv+ZVL8KpkfKOPyUCs324w3EBn9NiL9M+AKNVSNbcydJq9jNg==
 
+"@iconify/icons-logos@^1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-logos/-/icons-logos-1.0.12.tgz#0327f3e44c78aaa85c199e30881c84f26f3b3b07"
+  integrity sha512-VC5hcZ2lw1D15iQX5AukQ0m5r6EmRJ5jg6zoTL+XCRwH1RTdu0jUw6uN35uPTKp7OohAj1eLIjjnZw0WPeBkJg==
+
+"@iconify/icons-simple-icons@^1.0.46":
+  version "1.0.46"
+  resolved "https://registry.yarnpkg.com/@iconify/icons-simple-icons/-/icons-simple-icons-1.0.46.tgz#f3066831d57c43d2cffa5d38294416b91f3144e4"
+  integrity sha512-v7bJ0VAUb+8QQtTR0cqRpziSF29gnwaFN5oGD5CFNa6c0PskPw8H/G3fpJdra/l5KMvIozBoQl8nPqeQZhX+mA==
+
 "@iconify/vue@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@iconify/vue/-/vue-1.0.3.tgz#41e6ffb566b3c9462104862e6b8fde59d5f82a6e"

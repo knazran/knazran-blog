@@ -24,6 +24,8 @@
   "devDependencies": {
     "@babel/helper-compilation-targets": "^7.10.4",
     "@iconify/icons-ant-design": "^1.0.8",
+    "@iconify/icons-logos": "^1.0.12",
+    "@iconify/icons-simple-icons": "^1.0.46",
     "@iconify/vue": "^1.0.3",
     "@nuxtjs/tailwindcss": "^3.0.0",
     "eslint-config-prettier": "^4.1.0",

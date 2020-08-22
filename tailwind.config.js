@@ -15,7 +15,7 @@ module.exports = {
                 subheader: {
                     '400': '#8D8D8E'
                 }
-            }
+            },
         },
     },
     variants: {},

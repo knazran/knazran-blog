@@ -12,7 +12,10 @@
         :description="skill.description"
       ></skill-card>
     </div>
-    <!-- <img style="z-index:-1" class="absolute right-0 top-0" src="~/assets/img/Ellipse 2.png" /> -->
+    <!-- <div style="z-index:-1" class="absolute left-0 top-0 w-full">
+      <img class="object-fill w-full" src="~/assets/img/Ellipse 3.png" />
+    </div>-->
+    <!-- <img style="z-index:-1" class="absolute mt-12 right-0 top-0" src="~/assets/img/Ellipse 2.png" /> -->
   </div>
 </template>
 

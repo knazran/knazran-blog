@@ -9,7 +9,9 @@
         href="https://github.com/knazran"
       >knazran</a>
     </div>
-    <img style="z-index:-1" class="absolute right-0 top-0" src="~/assets/img/Ellipse 1.png" />
+    <div style="z-index:-1" class="absolute right-0 top-0 w-4/5 md:w-1/2">
+      <img class="object-fill w-full" src="~/assets/img/Ellipse 1.png" />
+    </div>
   </div>
 </template>
 

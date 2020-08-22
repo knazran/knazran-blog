@@ -1,6 +1,6 @@
 <template>
   <div class="w-full md:w-1/2 p-4 font-karla">
-    <div class="border rounded-md py-6 px-8 flex flex-col justify-start space-y-6 h-full">
+    <div class="border rounded-md py-6 px-8 flex flex-col justify-start space-y-6 h-full bg-white">
       <div>
         <img class="h-10 w-10 inline" :src="require(`@/assets/img/${icon}`)" />
         <h3 class="pl-2 inline text-xl text-primary-900 font-bold">{{title}}</h3>
@@ -13,8 +13,8 @@
         <IconifyIcon
           class="text-primary-500 mt-4"
           height="2em"
-          v-for="tool in tools"
-          :key="tool"
+          v-for="(tool, index) in tools"
+          :key="index"
           :icon="tool"
         />
       </div>

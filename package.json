@@ -19,7 +19,7 @@
     "@nuxt/content": "^1.6.0",
     "@nuxtjs/markdownit": "^1.2.6",
     "moment": "^2.27.0",
-    "nuxt": "^2.11.0"
+    "nuxt": "^2.14.0"
   },
   "devDependencies": {
     "@babel/helper-compilation-targets": "^7.10.4",

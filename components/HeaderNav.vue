@@ -3,11 +3,11 @@
     <div class="text-center md:text-left">
       <h2 class="font-raleway tracking-wide font-black text-xl">KN</h2>
     </div>
-    <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-md font-semibold">
+    <!-- <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-md font-semibold">
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">About</nuxt-link>
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Projects</nuxt-link>
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Blog</nuxt-link>
-    </div>
+    </div>-->
     <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-sm">
       <a class="text-gray-700 hover:text-black" href="https://www.linkedin.com/in/knazran/">
         <IconifyIcon :icon="icons.linkedin" height="24" />

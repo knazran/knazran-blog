@@ -9,9 +9,9 @@
         <p class="inline font-bold">{{hook}}</p>
         <p class="inline">{{description}}</p>
       </div>
-      <div v-if="tools" class="flex flex-wrap space-x-6">
+      <div v-if="tools" class="flex flex-wrap space-x-6 justify-center">
         <IconifyIcon
-          class="text-primary-500"
+          class="text-primary-500 mt-4"
           height="2em"
           v-for="tool in tools"
           :key="tool"

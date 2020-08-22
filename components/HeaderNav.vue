@@ -1,12 +1,12 @@
 <template>
-  <div class="flex justify-between">
-    <div>
+  <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between">
+    <div class="text-center md:text-left">
       <h2 class="font-raleway tracking-wide font-black text-xl">KN</h2>
     </div>
     <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-md font-semibold">
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">About</nuxt-link>
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Projects</nuxt-link>
-      <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/about`">Blog</nuxt-link>
+      <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Blog</nuxt-link>
     </div>
     <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-sm">
       <a class="text-gray-700 hover:text-black" href="https://www.linkedin.com/in/knazran/">

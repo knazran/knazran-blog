@@ -7,7 +7,7 @@
     </nuxt-link>
 
     <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-md font-semibold">
-      <!-- <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">About</nuxt-link> -->
+      <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/about`">About</nuxt-link>
       <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/project`">Projects</nuxt-link>
       <!-- <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Blog</nuxt-link> -->
     </div>

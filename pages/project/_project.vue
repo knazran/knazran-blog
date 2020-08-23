@@ -1,7 +1,17 @@
 <template>
-  <article>
-    <h1>{{project.title}}</h1>
-    <div class="markdown" v-html="$md.render(project.body)" />
+  <article class="my-16">
+    <div id="header" class="flex flex-wrap">
+      <div class="w-full md:w-1/2 leading-tight">
+        <p class="text-2xl text-primary-700 font-bold leading-tight">{{project.category}}</p>
+        <h4 class="text-5xl text-primary-900 font-semibold">{{project.title}}</h4>
+        <p class="text-lg text-primary-500 leading-tight mt-4">{{project.description}}</p>
+      </div>
+      <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
+        <img class="w-full rounded-lg object-fit" :src="`${project.preview_image}`" />
+      </div>
+    </div>
+
+    <div class="markdown py-4" v-html="$md.render(project.body)" />
   </article>
 </template>
 
@@ -53,11 +63,11 @@ export default {
 }
 
 .markdown h1 {
-  @apply leading-tight border-b text-4xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight text-4xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h2 {
-  @apply leading-tight border-b text-2xl font-semibold mb-4 mt-6 pb-2;
+  @apply leading-tight text-2xl font-semibold mb-4 mt-6 pb-2;
 }
 
 .markdown h3 {

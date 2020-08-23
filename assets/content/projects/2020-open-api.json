@@ -1,0 +1,8 @@
+{
+  "date": "2020-08-22T15:19:56.240Z",
+  "preview_image": "/img/screen-shot-2020-08-09-at-11.08.39-pm.png",
+  "category": "Open Source",
+  "title": "BNM Open API",
+  "description": "Built an unofficial Python wrapper for BNM's Open API",
+  "body": "# This Portfolio Website\n\nThis website is built from the ground up by myself. From the design in Figma, coding it up using Nuxt, and deploying it on Netlify"
+}

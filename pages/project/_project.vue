@@ -7,11 +7,15 @@
         <p class="text-lg text-primary-500 leading-tight mt-4">{{project.description}}</p>
       </div>
       <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
-        <img class="w-full rounded-lg object-fit" :src="`${project.preview_image}`" />
+        <img
+          style="max-height:450px;"
+          class="mx-auto w-auto rounded-lg object-scale-down"
+          :src="`${project.preview_image}`"
+        />
       </div>
     </div>
 
-    <div class="markdown py-4 md:w-2/3" v-html="$md.render(project.body)" />
+    <div class="markdown py-4 md:w-4/5" v-html="$md.render(project.body)" />
   </article>
 </template>
 

@@ -7,7 +7,7 @@
       </div>
       <div class="text-md text-primary-500 leading-tight">
         <p class="inline font-bold">{{hook}}</p>
-        <p class="inline">{{description}}</p>
+        <p class="inline font-light">{{description}}</p>
       </div>
       <div v-if="tools" class="flex flex-wrap space-x-6 justify-center">
         <IconifyIcon

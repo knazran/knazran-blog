@@ -2,7 +2,7 @@
   <article class="my-16">
     <div id="header" class="flex flex-wrap">
       <div class="w-full md:w-1/2 leading-tight">
-        <p class="text-2xl text-primary-700 font-bold leading-tight">{{project.category}}</p>
+        <p class="text-xl text-primary-700 font-bold leading-tight">{{project.category}}</p>
         <h4 class="text-5xl text-primary-900 font-semibold">{{project.title}}</h4>
         <p class="text-lg text-primary-500 leading-tight mt-4">{{project.description}}</p>
       </div>
@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div class="markdown py-4" v-html="$md.render(project.body)" />
+    <div class="markdown py-4 md:w-2/3" v-html="$md.render(project.body)" />
   </article>
 </template>
 

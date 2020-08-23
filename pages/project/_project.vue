@@ -66,6 +66,11 @@ export default {
   @apply font-bold;
 }
 
+.markdown img {
+  max-height: 500px;
+  @apply mx-auto my-6 rounded-lg;
+}
+
 .markdown h1 {
   @apply leading-tight text-4xl font-semibold mb-4 mt-6 pb-2;
 }

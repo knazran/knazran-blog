@@ -46,6 +46,17 @@ export default {
         'talk2.JPG'
       ]
     }
+  },
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Khairul Nazran (Knazran) personal site and blog'
+        }
+      ]
+    }
   }
 }
 </script>

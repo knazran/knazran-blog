@@ -34,6 +34,13 @@ export default {
     return {
       script: [
         { src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }
+      ],
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Khairul Nazran (Knazran) personal site and blog'
+        }
       ]
     }
   },

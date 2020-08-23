@@ -13,7 +13,7 @@ collections:
     format: 'json'
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -26,10 +26,11 @@ collections:
     format: 'json'
     slug: '{{year}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Preview Image', name: 'preview-image', widget: 'image' }
+      - { label: 'Preview Image', name: 'preview_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }

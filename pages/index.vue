@@ -2,6 +2,7 @@
   <div class="py-12 lg:py-24">
     <hero></hero>
     <skill-section></skill-section>
+    <project-section></project-section>
     <div class="mt-20">
       <contact></contact>
     </div>
@@ -14,14 +15,20 @@ import BlogCard from '~/components/BlogCard.vue'
 import Hero from '~/components/Hero.vue'
 import Contact from '~/components/Contact.vue'
 import SkillSection from '~/components/SkillSection.vue'
+import ProjectSection from '~/components/ProjectSection.vue'
 
 export default {
+  transition: {
+    name: 'home',
+    mode: 'out-in'
+  },
   components: {
     Logo,
     BlogCard,
     Hero,
     Contact,
-    SkillSection
+    SkillSection,
+    ProjectSection
   },
   head() {
     return {
@@ -43,5 +50,7 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<styles>
+  .home-enter-active, .home-leave-active { transition: opacity .5s; }
+  .home-enter, .home-leave-active { opacity: 0; }
+</styles>

@@ -59,7 +59,7 @@ export default {
           title: 'Web Development',
           hook: 'Build great web experiences.',
           description:
-            'By using modern web toolkit, I build websites and apps which brings delight whether it is a static landing page or an analytical web application.',
+            'By using modern web toolkit, I build websites and apps which bring delight whether it is a static landing page or an analytical web application.',
           tools: [
             reactIcon,
             vueDotJs,

@@ -40,6 +40,10 @@ export default {
           hid: 'description',
           name: 'description',
           content: 'Khairul Nazran (Knazran) personal site and blog'
+        },
+        {
+          name: 'og:image',
+          content: 'https://www.mugshotbot.com/m?url=https://www.knazran.dev'
         }
       ]
     }

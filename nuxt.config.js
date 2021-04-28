@@ -1,5 +1,7 @@
 export default {
-  mode: 'universal',
+  tailwindcss: {
+    jit: true
+  },
   /*
    ** Headers of the page
    */

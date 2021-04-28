@@ -25,9 +25,9 @@ export default {
     if (payload) return { project: payload }
     else
       return {
-        project: await require(`~/assets/content/projects/${params.project}.json`)
+        project: await require(`~/assets/content/projects/${params.project}.json`),
       }
-  }
+  },
 }
 </script>
 
@@ -100,7 +100,7 @@ export default {
 }
 
 .markdown code {
-  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-05;
+  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-5;
 }
 
 .markdown pre {
@@ -120,7 +120,7 @@ export default {
 }
 
 .markdown kbd {
-  @apply text-xs inline-block rounded border px-1 py-05 align-middle font-normal font-mono shadow;
+  @apply text-xs inline-block rounded border px-1 py-5 align-middle font-normal font-mono shadow;
 }
 
 .markdown table {

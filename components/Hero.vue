@@ -1,18 +1,18 @@
 <template>
   <transition name="block" enter-active-class="animate__animated animate__bounce">
-    <div class="md:flex font-karla">
-      <div class="w-full md:w-3/5 flex flex-col space-y-4 pr-6 lg:pr-12">
+    <div class="md:flex font-karla items-center">
+      <div class="flex justify-center md:block mt-0 md:mt-0 mb-4 md:mb-0 px-4">
+        <img class="rounded-full w-48 md:w-64" src="~/assets/img/portrait.jpg" />
+      </div>
+      <div class="flex flex-col space-y-4 pl-6 lg:pl-12 w-full md:w-3/5">
         <h1
-          class="text-6xl md:text-6xl tracking-wide leading-none font-bold text-primary-700"
+          class="text-3xl md:text-4xl tracking-wide leading-none font-bold text-primary-700"
         >Hi, I'm Nazran</h1>
         <p class="text-xl text-primary-500 leading-snug">
           I build data products and web apps to solve
           problems that matter. A serial hackathoner with over 20 participations in the past 4 years.
         </p>
         <p class="text-xl text-primary-500">Currently based in Kuala Lumpur 🇲🇾</p>
-      </div>
-      <div class="w-full mt-8 md:mt-0 px-4 md:w-2/5">
-        <img class="rounded-lg" src="~/assets/img/portrait.jpg" />
       </div>
     </div>
   </transition>

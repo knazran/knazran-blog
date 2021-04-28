@@ -11,15 +11,15 @@ export default {
     if (payload) return { blogPost: payload }
     else
       return {
-        blogPost: await require(`~/assets/content/blog/${params.blog}.json`)
+        blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
       }
-  }
+  },
 }
 </script>
 
 <style lang="postcss">
 /* Additional vertical padding used by kbd tag. */
-.py-05 {
+.py-5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
 }
@@ -81,7 +81,7 @@ export default {
 }
 
 .markdown code {
-  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-05;
+  @apply font-mono text-sm inline bg-gray-200 rounded px-1 py-5;
 }
 
 .markdown pre {
@@ -101,7 +101,7 @@ export default {
 }
 
 .markdown kbd {
-  @apply text-xs inline-block rounded border px-1 py-05 align-middle font-normal font-mono shadow;
+  @apply text-xs inline-block rounded border px-1 py-5 align-middle font-normal font-mono shadow;
 }
 
 .markdown table {

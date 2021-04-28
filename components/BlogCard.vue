@@ -1,30 +1,32 @@
 <template>
-  <div class="lg:flex border cursor-pointer my-8" @click="goToBlogPost">
-    <div class="w-full lg:w-1/2">
-      <img src="https://picsum.photos/400/300" />
+  <div
+    class="w-full max-w-4xl px-6 py-4 bg-white rounded-lg shadow-md my-4 border border-indigo-100 hover:border-indigo-300"
+    @click="goToBlogPost"
+  >
+    <div class="flex justify-between items-center">
+      <span class="font-light text-gray-600">{{formattedPublishedDate}}</span>
+      <a
+        href="#"
+        class="px-4 py-1 bg-primary-700 text-gray-100 font-bold rounded text-sm"
+      >{{blogPost.tag}}</a>
     </div>
-    <div class="w-full lg:w-1/2 px-4 py-8 flex flex-col justify-between">
-      <div class="flex mb-4">
-        <img src="https://i.pravatar.cc/50" class="rounded-full w-10 h-10 mr-2" />
-        <div class="flex flex-col">
-          <p class="text-gray-900 text-xs">Ng Sher Lynn</p>
-          <p class="text-gray-500 text-xs">{{formattedPublishedDate}}</p>
-        </div>
-      </div>
+    <div class="mt-2">
+      <a href="#" class="text-xl text-gray-700 font-bold hover:underline">{{blogPost.title}}</a>
+      <p class="mt-2 text-gray-600 text-md">{{blogPost.description}}</p>
+    </div>
+    <!-- <div class="flex justify-between items-center mt-4">
+      <a href="#" class="text-blue-500 hover:underline">Read more</a>
       <div>
-        <h2 class="font-semibold text-2xl mb-2 hover:text-yellow-800">{{blogPost.title}}</h2>
-        <p class="font-light text-gray-700 text-lg mb-2">{{blogPost.description}}</p>
+        <a href="#" class="flex items-center">
+          <img
+            src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
+            alt="avatar"
+            class="mx-4 w-10 h-10 object-cover rounded-full hidden sm:block"
+          />
+          <h1 class="text-gray-700 font-bold hover:underline">Alex John</h1>
+        </a>
       </div>
-      <hr />
-      <div class="flex justify-between text-xs text-gray-700">
-        <div class="flex space-x-8">
-          <p>1000 views</p>
-          <p class="text-blue-400">Write comment</p>
-        </div>
-
-        <p>65 likes</p>
-      </div>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -32,19 +34,19 @@
 import moment from 'moment'
 export default {
   props: {
-    blogPost: Object
+    blogPost: Object,
   },
   methods: {
     goToBlogPost() {
       this.$router.push({
-        path: `blog/${this.blogPost.slug}`
+        path: `blog/${this.blogPost.slug}`,
       })
-    }
+    },
   },
   computed: {
     formattedPublishedDate() {
       return moment(this.blogPost.date).format('D MMM YYYY')
-    }
-  }
+    },
+  },
 }
 </script>

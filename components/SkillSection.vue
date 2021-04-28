@@ -1,7 +1,7 @@
 <template>
   <div class="mt-20 relative">
     <subheader header="Skills and Expertise" title="What I am good at 💪🏽"></subheader>
-    <div class="my-8 flex flex-wrap items-stretch">
+    <div class="flex flex-wrap items-stretch">
       <skill-card
         v-for="skill in skillCardData"
         :key="skill.key"
@@ -39,7 +39,7 @@ import googleAnalytics from '@iconify/icons-logos/google-analytics'
 export default {
   components: {
     Subheader,
-    SkillCard
+    SkillCard,
   },
   data() {
     return {
@@ -51,7 +51,7 @@ export default {
           hook: 'Utilize data for impact.',
           description:
             'From identifying the problem scope, sourcing and extracting data, analysis, dashboarding, and model deployment, I am able to conduct a data project from start to finish',
-          tools: [pythonIcon, pandasIcon, postgresqlIcon, metabaseIcon]
+          tools: [pythonIcon, pandasIcon, postgresqlIcon, metabaseIcon],
         },
         {
           key: 'web',
@@ -66,8 +66,8 @@ export default {
             tailwindcssIcon,
             gatsbyIcon,
             djangoIcon,
-            herokuIcon
-          ]
+            herokuIcon,
+          ],
         },
         {
           key: 'product',
@@ -76,7 +76,7 @@ export default {
           hook: 'Build the right product for the problem.',
           description:
             'Through conducting user interviews, identifying success metrics, planning development, and tracking product analytics.',
-          tools: [googleAnalytics, mixpanelIcon]
+          tools: [googleAnalytics, mixpanelIcon],
         },
         {
           key: 'teach',
@@ -85,10 +85,10 @@ export default {
           hook: '“Jangan kedekut ilmu”.',
           description:
             'I deliver talks in meetups and conferences to share what I know and lessons learnt from my journey and mistakes.',
-          tools: null
-        }
-      ]
+          tools: null,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

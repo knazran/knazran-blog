@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-1/3 p-4 font-karla">
+  <div class="w-full md:w-1/3 py-4 pr-4 font-karla">
     <nuxt-link :to="`project/${slug}`">
       <div
         class="border shadow-md hover:shadow-2xl rounded-md py-4 px-6 flex flex-col justify-start space-y-4 h-full bg-white"
@@ -12,8 +12,9 @@
           <p class="inline">{{description}}</p>
         </div>
         <div>
-          <img class="w-full rounded-lg" :src="`${preview_image}`" />
+          <img class="w-full rounded-lg max-h-80 object-scale-down" :src="`${preview_image}`" />
         </div>
+
         <!-- <nuxt-link class="text-right text-primary-700" :to="`project/${slug}`">See More ></nuxt-link> -->
       </div>
     </nuxt-link>
@@ -27,7 +28,7 @@ export default {
     category: String,
     description: String,
     preview_image: String,
-    slug: String
-  }
+    slug: String,
+  },
 }
 </script>

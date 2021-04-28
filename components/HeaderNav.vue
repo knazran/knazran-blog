@@ -6,10 +6,19 @@
       </div>
     </nuxt-link>
 
-    <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-md font-semibold">
-      <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/about`">About</nuxt-link>
-      <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/project`">Projects</nuxt-link>
-      <!-- <nuxt-link class="text-primary-700 hover:text-primary-900" :to="`/`">Blog</nuxt-link> -->
+    <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-md">
+      <nuxt-link
+        class="text-primary-700 hover:text-primary-900 hover:font-semibold"
+        :to="`/about`"
+      >About</nuxt-link>
+      <nuxt-link
+        class="text-primary-700 hover:text-primary-900 hover:font-semibold"
+        :to="`/project`"
+      >Projects</nuxt-link>
+      <nuxt-link
+        class="text-primary-700 hover:text-primary-900 hover:font-semibold"
+        :to="`/blog`"
+      >Blog</nuxt-link>
     </div>
     <div id="nav" class="flex justify-center lg:justify-start space-x-6 text-sm">
       <a class="text-gray-700 hover:text-black" href="https://www.linkedin.com/in/knazran/">
@@ -33,16 +42,16 @@ import twitterOutlined from '@iconify/icons-ant-design/twitter-outlined'
 
 export default {
   components: {
-    IconifyIcon
+    IconifyIcon,
   },
   data() {
     return {
       icons: {
         linkedin: linkedinFilled,
         github: githubFilled,
-        twitter: twitterOutlined
-      }
+        twitter: twitterOutlined,
+      },
     }
-  }
+  },
 }
 </script>

@@ -45,5 +45,6 @@ export const actions = {
       return res
     })
     await commit('setProjects', projects)
+    await commit('setBlogPosts', blogPosts)
   }
 }

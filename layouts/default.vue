@@ -19,8 +19,8 @@
 import HeaderNav from '~/components/HeaderNav.vue'
 export default {
   components: {
-    HeaderNav
-  }
+    HeaderNav,
+  },
 }
 </script>
 

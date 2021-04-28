@@ -11,7 +11,7 @@
       <nuxt-link
         class="text-xl text-gray-700 font-bold hover:underline"
         :to="`/blog`"
-      >{{blogPost.title}} ></nuxt-link>
+      >{{blogPost.title}}</nuxt-link>
       <p class="mt-2 text-gray-600 text-md">{{blogPost.description}}</p>
     </div>
     <!-- <div class="flex justify-between items-center mt-4">

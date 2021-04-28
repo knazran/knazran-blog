@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-20">
+  <div v-if="blogPosts.length" class="mt-20">
     <subheader
       header="Latest Blog Posts"
       title="Observations, retrospectives, and musings ✍️"

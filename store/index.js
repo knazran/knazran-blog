@@ -14,7 +14,7 @@ export const mutations = {
 
 export const getters = {
   getBlogposts: state => {
-    return state.blogPosts;
+    return state.blogPosts.filter(post => post.published);
   },
   getProjects: state => {
     return state.projects;

@@ -19,6 +19,12 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Tags', name: 'tag', widget: 'string' }
+      - {
+          label: 'Published',
+          name: 'published',
+          widget: 'boolean',
+          default: false,
+        }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'projects'
     label: 'Past Projects'

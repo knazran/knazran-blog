@@ -1,8 +1,22 @@
 <template>
-  <article>
+  <div class="my-8 md:my-16 flex justify-center">
+    <article class="w-full md:w-4/5 p-4 bg-white rounded-lg shadow-md">
+      <div id="header" class="flex flex-wrap w-full mb-8">
+        <div class="w-full leading-tight">
+          <p class="text-lg text-primary-700 font-bold leading-tight">{{blogPost.tag}}</p>
+          <h4 class="text-3xl text-primary-900 font-semibold">{{blogPost.title}}</h4>
+          <p class="text-lg text-primary-500 leading-tight mt-4">{{blogPost.description}}</p>
+        </div>
+      </div>
+
+      <div class="markdown py-4 w-full" v-html="$md.render(blogPost.body)" />
+    </article>
+  </div>
+
+  <!-- <article>
     <h1>{{blogPost.title}}</h1>
     <div class="markdown" v-html="$md.render(blogPost.body)" />
-  </article>
+  </article>-->
 </template>
 
 <script>
@@ -37,7 +51,7 @@ export default {
 }
 
 .markdown li > p + p {
-  @apply mt-6;
+  @apply mt-4;
 }
 
 .markdown strong {

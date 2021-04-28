@@ -5,13 +5,13 @@
   >
     <div class="flex justify-between items-center">
       <span class="font-light text-gray-600">{{formattedPublishedDate}}</span>
-      <a
-        href="#"
-        class="px-4 py-1 bg-primary-700 text-gray-100 font-bold rounded text-sm"
-      >{{blogPost.tag}}</a>
+      <a class="px-4 py-1 bg-primary-700 text-gray-100 font-bold rounded text-sm">{{blogPost.tag}}</a>
     </div>
     <div class="mt-2">
-      <a href="#" class="text-xl text-gray-700 font-bold hover:underline">{{blogPost.title}}</a>
+      <nuxt-link
+        class="text-xl text-gray-700 font-bold hover:underline"
+        :to="`/blog`"
+      >{{blogPost.title}} ></nuxt-link>
       <p class="mt-2 text-gray-600 text-md">{{blogPost.description}}</p>
     </div>
     <!-- <div class="flex justify-between items-center mt-4">

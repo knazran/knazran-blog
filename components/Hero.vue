@@ -2,7 +2,7 @@
   <transition name="block" enter-active-class="animate__animated animate__bounce">
     <div class="md:flex font-karla items-center">
       <div class="flex justify-center md:block mt-0 md:mt-0 mb-4 md:mb-0 px-4">
-        <img class="rounded-full w-48 md:w-64" src="~/assets/img/portrait.jpg" />
+        <img class="rounded-full w-48 md:w-64 h-48 md:h-64" src="~/assets/img/portrait.jpg" />
       </div>
       <div class="flex flex-col space-y-4 pl-6 lg:pl-12 w-full md:w-3/5">
         <h1

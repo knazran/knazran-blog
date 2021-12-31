@@ -39,7 +39,7 @@ export default {
   methods: {
     goToBlogPost() {
       this.$router.push({
-        path: `blog/${this.blogPost.slug}`,
+        path: `/blog/${this.blogPost.slug}`,
       })
     },
   },

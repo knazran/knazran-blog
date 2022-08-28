@@ -1,23 +1,23 @@
 <template>
   <div class="mt-20">
-    <subheader header="Past Projects" title="What have I done and built 🏗️"></subheader>
+    <subheader header="Hackathons and Side Projects" title="Hacking my way from zero-to-one over and over again"></subheader>
     <div class="flex flex-wrap items-stretch">
       <project-card
-        v-for="project in projects"
-        :key="project.title"
-        :title="project.title"
-        :category="project.category"
-        :description="project.description"
-        :preview_image="project.preview_image"
-        :slug="project.slug"
+        v-for="hackathon in hackathons"
+        :key="hackathon.title"
+        :title="hackathon.title"
+        :category="hackathon.category"
+        :description="hackathon.description"
+        :preview_image="hackathon.preview_image"
+        :slug="hackathon.slug"
       ></project-card>
     </div>
     <div class="flex justify-center">
       <button>
         <nuxt-link
           class="text-right text-primary-500 text-lg hover:font-semibold"
-          :to="`/project`"
-        >👀 See more cool things I did ></nuxt-link>
+          :to="`/hackathon`"
+        >👀 See more hacks ></nuxt-link>
       </button>
     </div>
   </div>
@@ -33,15 +33,15 @@ export default {
     Subheader,
   },
   computed: {
-    projects() {
-      const projects = this.$store.getters.getProjects.slice()
-      return projects
+    hackathons() {
+      const hackathons = this.$store.getters.getHackathons.slice()
+      return hackathons
         .sort(function (a, b) {
           // Turn your strings into dates, and then subtract them
           // to get a value that is either negative, positive, or zero.
           return new Date(b.date) - new Date(a.date)
         })
-        .slice(0, 6)
+        .slice(0, 3)
     },
   },
 }

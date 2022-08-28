@@ -1,6 +1,6 @@
 <template>
   <div class="mt-20">
-    <subheader header="Past Projects and Involvement" title="What have I done 🏗️"></subheader>
+    <subheader header="Past Projects" title="What have I done and built 🏗️"></subheader>
     <div class="my-8 flex flex-wrap items-stretch">
       <project-card
         v-for="project in projects"

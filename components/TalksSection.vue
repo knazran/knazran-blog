@@ -1,23 +1,23 @@
 <template>
   <div class="mt-20">
-    <subheader header="Past Projects" title="What have I done and built 🏗️"></subheader>
+    <subheader header="Talks and Speaking Engagement" title="Sharing what I've learned to others in public"></subheader>
     <div class="flex flex-wrap items-stretch">
       <project-card
-        v-for="project in projects"
-        :key="project.title"
-        :title="project.title"
-        :category="project.category"
-        :description="project.description"
-        :preview_image="project.preview_image"
-        :slug="project.slug"
+        v-for="talk in talks"
+        :key="talk.title"
+        :title="talk.title"
+        :category="talk.category"
+        :description="talk.description"
+        :preview_image="talk.preview_image"
+        :slug="talk.slug"
       ></project-card>
     </div>
     <div class="flex justify-center">
       <button>
         <nuxt-link
           class="text-right text-primary-500 text-lg hover:font-semibold"
-          :to="`/project`"
-        >👀 See more cool things I did ></nuxt-link>
+          :to="`/talks`"
+        >👀 See more talks ></nuxt-link>
       </button>
     </div>
   </div>
@@ -33,15 +33,15 @@ export default {
     Subheader,
   },
   computed: {
-    projects() {
-      const projects = this.$store.getters.getProjects.slice()
-      return projects
+    talks() {
+      const talks = this.$store.getters.getTalks.slice()
+      return talks
         .sort(function (a, b) {
           // Turn your strings into dates, and then subtract them
           // to get a value that is either negative, positive, or zero.
           return new Date(b.date) - new Date(a.date)
         })
-        .slice(0, 6)
+        .slice(0, 3)
     },
   },
 }

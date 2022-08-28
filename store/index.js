@@ -1,6 +1,8 @@
 export const state = () => ({
   blogPosts: [],
-  projects: []
+  projects: [],
+  hackathons: [],
+  talks: []
 })
 
 export const mutations = {
@@ -9,6 +11,12 @@ export const mutations = {
   },
   setProjects(state, list) {
     state.projects = list
+  },
+  setHackathons(state, list) {
+    state.hackathons = list
+  },
+  setTalks(state, list) {
+    state.talks = list
   }
 }
 
@@ -18,6 +26,12 @@ export const getters = {
   },
   getProjects: state => {
     return state.projects;
+  },
+  getHackathons: state => {
+    return state.hackathons;
+  },
+  getTalks: state => {
+    return state.talks;
   }
 }
 
@@ -44,7 +58,31 @@ export const actions = {
       res.slug = key.slice(2, -5)
       return res
     })
+
+    let hackathonFiles = await require.context(
+      '~/assets/content/hackathons/',
+      false,
+      /\.json$/
+    )
+    let hackathons = hackathonFiles.keys().map(key => {
+      let res = hackathonFiles(key)
+      res.slug = key.slice(2, -5)
+      return res
+    })
+
+    let talksFiles = await require.context(
+      '~/assets/content/talks/',
+      false,
+      /\.json$/
+    )
+    let talks = talksFiles.keys().map(key => {
+      let res = talksFiles(key)
+      res.slug = key.slice(2, -5)
+      return res
+    })
     await commit('setProjects', projects)
     await commit('setBlogPosts', blogPosts)
+    await commit('setHackathons', hackathons)
+    await commit('setTalks', talks)
   }
 }

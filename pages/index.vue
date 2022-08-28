@@ -1,9 +1,11 @@
 <template>
   <div class="py-8 lg:py-12">
     <hero></hero>
-    <blog-section></blog-section>
     <skill-section></skill-section>
     <project-section></project-section>
+    <hackathon-section></hackathon-section>
+    <talks-section></talks-section>
+    <blog-section></blog-section>
     <div class="mt-20">
       <contact></contact>
     </div>
@@ -17,6 +19,8 @@ import Hero from '~/components/Hero.vue'
 import Contact from '~/components/Contact.vue'
 import SkillSection from '~/components/SkillSection.vue'
 import ProjectSection from '~/components/ProjectSection.vue'
+import HackathonSection from '~/components/HackathonSection.vue'
+import TalksSection from '~/components/TalksSection.vue'
 import BlogSection from '~/components/BlogSection.vue'
 import Subheader from '~/components/Subheader'
 
@@ -33,6 +37,8 @@ export default {
     SkillSection,
     ProjectSection,
     BlogSection,
+    HackathonSection,
+    TalksSection,
     Subheader,
   },
   head() {

@@ -10,7 +10,7 @@
         >Hi, I'm Nazran</h1>
         <p class="text-xl text-primary-500 leading-snug">
           I build data products and web apps to solve
-          problems that matter. A serial hackathoner with over 20 participations in the past 4 years.
+          problems that matter. Currently a Software Engineer in FinTech. A serial hackathoner with over 20 participations in the past 4 years.
         </p>
         <p class="text-xl text-primary-500">Currently based in Kuala Lumpur 🇲🇾</p>
       </div>

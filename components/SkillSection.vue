@@ -45,21 +45,12 @@ export default {
     return {
       skillCardData: [
         {
-          key: 'data',
-          icon: 'Skill Icon - Data.png',
-          title: 'End-to-end data project',
-          hook: 'Utilize data for impact.',
-          description:
-            'From identifying the problem scope, sourcing and extracting data, analysis, dashboarding, and model deployment, I am able to conduct a data project from start to finish',
-          tools: [pythonIcon, pandasIcon, postgresqlIcon, metabaseIcon],
-        },
-        {
           key: 'web',
           icon: 'Skill Icon - web.png',
           title: 'Web Development',
           hook: 'Build great web experiences.',
           description:
-            'By using modern web toolkit, I build websites and apps which bring delight whether it is a static landing page or an analytical web application.',
+            'By using modern web toolkit, I build websites and apps which bring delight whether it is a static landing page or a Software-as-a-Service.',
           tools: [
             reactIcon,
             vueDotJs,
@@ -68,6 +59,15 @@ export default {
             djangoIcon,
             herokuIcon,
           ],
+        },
+        {
+          key: 'data',
+          icon: 'Skill Icon - Data.png',
+          title: 'End-to-end data project',
+          hook: 'Utilize data for impact.',
+          description:
+            'From identifying the problem scope, sourcing and extracting data, analysis, dashboarding, and model deployment, I am able to conduct a data project from start to finish',
+          tools: [pythonIcon, pandasIcon, postgresqlIcon, metabaseIcon],
         },
         {
           key: 'product',

@@ -17,6 +17,14 @@
       >Projects</nuxt-link>
       <nuxt-link
         class="text-primary-700 hover:text-primary-900 hover:font-semibold"
+        :to="`/hackathon`"
+      >Hackathons</nuxt-link>
+      <nuxt-link
+        class="text-primary-700 hover:text-primary-900 hover:font-semibold"
+        :to="`/talks`"
+      >Talks</nuxt-link>
+      <nuxt-link
+        class="text-primary-700 hover:text-primary-900 hover:font-semibold"
         :to="`/blog`"
       >Blog</nuxt-link>
     </div>

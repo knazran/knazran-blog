@@ -41,3 +41,33 @@ collections:
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Preview Image', name: 'preview_image', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'hackathons'
+    label: 'Hackathons'
+    folder: 'assets/content/hackathons'
+    create: true
+    format: 'json'
+    slug: '{{year}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Preview Image', name: 'preview_image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: 'talks'
+    label: 'Talks'
+    folder: 'assets/content/talks'
+    create: true
+    format: 'json'
+    slug: '{{year}}-{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Preview Image', name: 'preview_image', widget: 'image' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }

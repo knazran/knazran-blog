@@ -3,6 +3,6 @@
   "category": "Web Development",
   "title": "Monsters Among Us (MAU) Website",
   "preview_image": "/img/screen-shot-2022-08-29-at-3.49.09-pm.png",
-  "body": "\n\n* Redesigned Monsters Among Us, a non-profit organisation that combats systemic violence against children in Malaysia through youth-led child rights advocacy. \n* Handled the end-to-end process including the design, translating it into front-end code, integrating it with the content management system (CMS), and deploying it. \n* Also project managed the entire project and worked with a junior engineer\n* Built with NuxtJS, TailwindCSS powered by Netlify CMS.\n\n![](/img/screen-shot-2022-08-29-at-3.50.05-pm.png)\n\n![](/img/screen-shot-2022-08-29-at-3.49.34-pm.png)",
+  "body": "* Redesigned Monsters Among Us, a non-profit organisation that combats systemic violence against children in Malaysia through youth-led child rights advocacy. \n* Handled the end-to-end process including the design, translating it into front-end code, integrating it with the content management system (CMS), and deploying it. \n* Also project managed the entire project and worked with a junior engineer\n* Built with NuxtJS, TailwindCSS powered by Netlify CMS.\n* See the live website [here](https://www.laporpredator.org/)\n\n![](/img/screen-shot-2022-08-29-at-3.50.05-pm.png)\n\n![](/img/screen-shot-2022-08-29-at-3.49.34-pm.png)",
   "description": "Commissioned by MAU, I was tasked to redesign their website from the ground up, from creating the design in Figma, coding it up using Nuxt, and deploying it on Netlify"
 }

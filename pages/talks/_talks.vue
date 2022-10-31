@@ -2,16 +2,13 @@
   <article class="my-16">
     <div id="header" class="flex flex-wrap">
       <div class="w-full md:w-1/2 leading-tight">
-        <p class="text-xl text-primary-700 font-bold leading-tight">{{project.category}}</p>
-        <h4 class="text-5xl text-primary-900 font-semibold">{{project.title}}</h4>
-        <p class="text-lg text-primary-500 leading-tight mt-4">{{project.description}}</p>
+        <p class="text-xl text-primary-700 font-bold leading-tight">{{ project.category }}</p>
+        <h4 class="text-5xl text-primary-900 font-semibold">{{ project.title }}</h4>
+        <p class="text-lg text-primary-500 leading-tight mt-4">{{ project.description }}</p>
       </div>
       <div class="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8">
-        <img
-          style="max-height:450px;"
-          class="mx-auto w-auto rounded-lg object-scale-down"
-          :src="`${project.preview_image}`"
-        />
+        <img style="max-height:450px;" class="mx-auto w-auto rounded-lg object-scale-down"
+          :src="`${project.preview_image}`" />
       </div>
     </div>
 
@@ -21,12 +18,11 @@
 
 <script>
 export default {
-  async asyncData({ params, payload }) {
-    if (payload) return { project: payload }
-    else
-      return {
-        project: await require(`~/assets/content/projects/${params.project}.json`),
-      }
+  async asyncData({ params }) {
+    return {
+      project: await require(`~/assets/content/talks/${params.talks}.json`),
+    }
+
   },
 }
 </script>
@@ -42,15 +38,15 @@ export default {
   @apply text-gray-900 leading-normal break-words;
 }
 
-.markdown > * + * {
+.markdown>*+* {
   @apply mt-0 mb-4;
 }
 
-.markdown li + li {
+.markdown li+li {
   @apply mt-1;
 }
 
-.markdown li > p + p {
+.markdown li>p+p {
   @apply mt-6;
 }
 

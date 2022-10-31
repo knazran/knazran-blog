@@ -3,9 +3,9 @@
     <article class="w-full md:w-4/5 p-4 bg-white rounded-lg shadow-md">
       <div id="header" class="flex flex-wrap w-full mb-8">
         <div class="w-full leading-tight">
-          <p class="text-lg text-primary-700 font-bold leading-tight">{{blogPost.tag}}</p>
-          <h4 class="text-3xl text-primary-900 font-semibold">{{blogPost.title}}</h4>
-          <p class="text-lg text-primary-500 leading-tight mt-4">{{blogPost.description}}</p>
+          <p class="text-lg text-primary-700 font-bold leading-tight">{{ blogPost.tag }}</p>
+          <h4 class="text-3xl text-primary-900 font-semibold">{{ blogPost.title }}</h4>
+          <p class="text-lg text-primary-500 leading-tight mt-4">{{ blogPost.description }}</p>
         </div>
       </div>
 
@@ -21,12 +21,10 @@
 
 <script>
 export default {
-  async asyncData({ params, payload }) {
-    if (payload) return { blogPost: payload }
-    else
-      return {
-        blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
-      }
+  async asyncData({ params }) {
+    return {
+      blogPost: await require(`~/assets/content/blog/${params.blog}.json`),
+    }
   },
 }
 </script>
@@ -42,15 +40,15 @@ export default {
   @apply text-gray-900 leading-normal break-words;
 }
 
-.markdown > * + * {
+.markdown>*+* {
   @apply mt-0 mb-4;
 }
 
-.markdown li + li {
+.markdown li+li {
   @apply mt-1;
 }
 
-.markdown li > p + p {
+.markdown li>p+p {
   @apply mt-4;
 }
 

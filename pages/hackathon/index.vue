@@ -1,16 +1,11 @@
 <template>
   <div class="mt-20">
-    <subheader header="Hackathons and Side Projects" title="Hacking my way from zero-to-one over and over again"></subheader>
+    <subheader header="Hackathons and Side Projects" title="Hacking my way from zero-to-one over and over again">
+    </subheader>
     <div class="my-8 flex flex-wrap items-stretch">
-      <project-card
-        v-for="hackathon in hackathons"
-        :key="hackathon.title"
-        :title="hackathon.title"
-        :category="hackathon.category"
-        :description="hackathon.description"
-        :preview_image="hackathon.preview_image"
-        :slug="hackathon.slug"
-      ></project-card>
+      <hackathon-card v-for="hackathon in hackathons" :key="hackathon.title" :title="hackathon.title"
+        :category="hackathon.category" :description="hackathon.description" :preview_image="hackathon.preview_image"
+        :slug="hackathon.slug"></hackathon-card>
       <!-- <skill-card
         v-for="skill in skillCardData"
         :key="skill.key"
@@ -25,12 +20,12 @@
 </template>
 
 <script>
-import ProjectCard from '~/components/ProjectCard'
+import HackathonCard from '~/components/HackathonCard'
 import Subheader from '~/components/Subheader'
 
 export default {
   components: {
-    ProjectCard,
+    HackathonCard,
     Subheader
   },
   computed: {

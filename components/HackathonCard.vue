@@ -1,6 +1,6 @@
 <template>
   <div class="w-full md:w-1/3 py-4 pr-4 font-karla">
-    <nuxt-link :to="`hackathon/${slug}`">
+    <nuxt-link :to="`/hackathon/${slug}`">
       <div
         class="border shadow-md hover:shadow-2xl rounded-md py-4 px-6 flex flex-col justify-start space-y-4 h-full bg-white">
         <div>
